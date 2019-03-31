@@ -16,7 +16,7 @@
             font:14px/1.6 Arial;
             color:#444;
             background:#efefef;
-            letter-spacing:0.7px;
+            letter-spacing:0.6px;
         }
         .layout{
             max-width:210mm;  /*考虑到移动端，用max-width*/
@@ -153,19 +153,22 @@
         main .item .birdRadio{
             border-bottom:none;
         }
-        /* .radio{
-            width:500px;
-        } */
+        .vocational-skills{
+            font-size: 0;
+        }
+        .vocational-skills li{
+            font-size: 13px;
+        }
         .canvasImg{
             border:1px solid #ccc;
         }
 
         /* 这里做一个响应式，以方便手机端显示，当最大宽度是768，也就是屏幕宽度小于等于768的时候，显示下边样式 */
-        /* @media (max-width: 768px){
+        @media (max-width: 768px){
             aside{
                 width:100%;
             }
-        } */
+        }
     </style>
 </head>
 <body>
@@ -292,7 +295,7 @@
         <main>
             <section>
                 <h2>职业技能</h2>
-                <ul>
+                <ul class="vocational-skills">
                     <li>- 熟练掌握HTML/CSS/JavaScript,完成网页静态布局,以及实现页面的交互</li>
                     <li>- 熟练使用<b>HTML5</b>和<b>CSS3</b>,实现应用一站式跨屏（PC端与移动端）开发</li>
                     <li>- 熟练掌握JS主流框架<b>Jquery</b>,实现页面的交互效果</li>
