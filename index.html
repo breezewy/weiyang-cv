@@ -162,13 +162,27 @@
         .canvasImg{
             border:1px solid #ccc;
         }
+        .youzan{
+            width:125px;
+        }
+        strong{
+            font-size: 16px;
+            font-weight: 900;
+            color:#000;
+        } 
+        ol > li{
+            padding-left:10px;
+        }
+        .birdRadioBox{
+
+        }
 
         /* 这里做一个响应式，以方便手机端显示，当最大宽度是768，也就是屏幕宽度小于等于768的时候，显示下边样式 */
-        @media (max-width: 768px){
+        /* @media (max-width: 768px){
             aside{
                 width:100%;
             }
-        }
+        } */
     </style>
 </head>
 <body>
@@ -298,26 +312,62 @@
                 <ul class="vocational-skills">
                     <li>- 熟练掌握HTML/CSS/JavaScript,完成网页静态布局,以及实现页面的交互</li>
                     <li>- 熟练使用<b>HTML5</b>和<b>CSS3</b>,实现应用一站式跨屏（PC端与移动端）开发</li>
-                    <li>- 熟练掌握JS主流框架<b>Jquery</b>,实现页面的交互效果</li>
+                    <li>- 熟练掌握JS主流框架<b>jQuery</b>,实现页面的交互效果</li>
                     <li>- 熟悉前后端交互技术<b>AJAX</b>,掌握<b>JSONP</b>,<b>CORS</b>等跨域解决方案</li>
-                    <li>- 熟悉<b>VueJS</b>常用功能，能够使用Vue全家桶开发项目</li>
+                    <li>- 熟悉<b>VueJS</b>常用功能，能够使用<b>Vue全家桶</b>开发项目</li>
                     <li>- 熟悉<b>ES6</b>常用新规范，可用于项目开发</li>
-                    <li>- 对<b>模块化，工程化</b>有一定了解，使用gulp等前端自动化构建工具</li>
+                    <li>- 对前端模块化，工程化有一定了解，使用<b>gulp</b>等前端自动化构建工具</li>
                 </ul>
                 <img src="" alt="">
             </section>
             <section>
                 <h2>个人项目</h2>
                 <div class="item">
-                    <h3><b>Vue.Js技术栈实现Cnode社区</b></h3>
-                    <img src="./img/cnode.jpg" alt="CNode社区">
+                    <h3>有赞商城(Vue)</h3>
+                    <img src="./img/maijia1.jpeg" alt="youzan" class="youzan">
+                    <img src="./img/maijia2.jpeg" alt="youzan" class="youzan">
+                    <img src="./img/maijia3.jpeg" alt="youzan" class="youzan">
+                    <img src="./img/maijia4.jpeg" alt="youzan" class="youzan">
+                    
                     <ul>
-                        <li>- 项目介绍: 使用Vue技术栈，利用CNode官方API，仿了一个CNode社区。
-                            该项目以<b>Vue.Cli</b>构建项目模板,使用<b>Vue-Router</b>管理项目路由的切换以及参数的传递。
-                            使用<b>Axios</b>发送请求获取数据。使用<b>vuex</b>对项目进行状态管理。使用Watch监听路由的变化。
+                        <li>- <strong>项目介绍</strong>: 
+                           <ol>
+                               <li>1、使用Vue技术栈，仿移动端有赞商城</li>
+                               <li>2、支持分类切换，商品详情，购物车结算，地址编辑等功能</li>
+                               <li>3、使用<b>vuex</b>进行地址状态管理</li>
+                               <li>4、使用<b>vue-router</b>进行路由跳转管理</li>
+                               <li>5、使用<b>axios+promise</b>进行异步数据请求</li>
+                               <li>6、使用<b>RAP2，mock数据，</b></li>
+                               <li>7、使用Swiper组件实现轮播</li>
+                           </ol>
                         </li>
                         <li>
-                            - 技术栈: <b>vue2.0</b>、vue-router2.0、vuex、axios、webpack、<b>npm</b>、<b>es6</b>
+                            - 技术栈: <b>Vue2.0、vue-router、vuex、axios、Swiper、webpack、npm、es6</b>
+                        </li>
+                        <li>
+                            - 项目源码: <a href="https://github.com/breezewy/maijia">点击查看</a>
+                        </li>
+                        <li>
+                            - 项目预览: <a href="https://breezewy.github.io/maijia/dist/index.html">点击查看(请切换至手机调试模式)</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h3>Vue.Js技术栈实现Cnode社区</h3>
+                    <img src="./img/cnode.jpg" alt="CNode社区">
+                    <ul>
+                        <li>- <strong>项目介绍</strong>: 
+                            <ol>
+                                <li>1、使用Vue技术栈，利用CNode官方API，仿了一个CNode社区。</li>
+                                <li>2、该项目以<b>Vue.Cli</b>构建项目模板</li>
+                                <li>3、使用<b>Vue-Router</b>管理项目路由的切换以及参数的传递</li>
+                                <li>4、使用<b>Axios</b>发送请求获取数据</li>
+                                <li>5、使用<b>vuex</b>对项目进行状态管理</li>
+                                <li>6、使用Watch监听路由的变化</li>
+                            </ol>
+                        </li>
+                        <li>
+                            - 技术栈: vue2.0、vue-router、vuex、axios、webpack、npm、es6
                         </li>
                         <li>
                             - 项目源码:   <a href="https://github.com/breezewy/Cnode">点击查看</a>
@@ -328,40 +378,49 @@
                     </ul>
                 </div>
                 <div class="item">
-                    <h3><b>多彩画板</b></h3>
+                    <h3>多彩画板</h3>
                     <img src="./img/canvas.jpg" alt="canvas" class="canvasImg">
                     <ul>
                         <li>
-                            - 项目介绍: HTML5 <b>Canvas</b> 配合JavaScript 制作的一个画板！
+                            - <strong>项目介绍</strong>: HTML5 <b>Canvas</b> 配合JavaScript 制作的一个画板！
                         </li>
                         <li>
-                            - 功能介绍:
-                            1.兼容移动端(支持触摸);
-                            2.切换画笔颜色;
-                            3.调整画笔粗细;
-                            4.清空画布;
-                            5.橡皮擦擦除;
-                            6.保存下载;    
+                            <ol>
+                                <li>1、支持兼容移动端(支持触摸);</li>
+                                <li>2、支持切换画笔颜色;</li>
+                                <li>3、支持调整画笔粗细;</li>
+                                <li>4、支持清空画布;</li>
+                                <li>5、支持橡皮擦擦除;</li>
+                                <li>6、支持保存下载;</li>
+                            </ol>   
                         </li>
                         <li>
                             - 技术栈: <b>HTML5</b>、<b>CSS3</b>、JavaScript、<b>JQuery</b>、<b>响应式</b>
                         </li>
                         <li>
-                            - 项目源码: <a href="https://github.com/breezewy/BirdRadio-station">点击查看</a>
+                            - 项目源码: <a href="https://github.com/breezewy/canvas-demo">点击查看</a>
                         </li>
                         <li>
-                            - 项目预览: <a href="https://breezewy.github.io/BirdRadio-station/">点击查看</a>
+                            - 项目预览: <a href="https://breezewy.github.io/canvas-demo/index.html">点击查看</a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="item">
-                    <h3><b>仿移动端网易云音乐</b></h3>
+                    <h3>仿移动端网易云音乐</h3>
                     <img src="./img/netease1.jpg" alt="网易云音乐" class="netease">
                     <img src="./img/netease2.jpg" alt="网易云音乐" class="netease">
                     <img src="./img/netease3.jpg" alt="网易云音乐" class="netease">
                     <ul>
-                        <li>- 项目介绍: 仿移动端网易云音乐，支持在线听歌，歌词展示，专辑封面动画,支持播放暂停,支持歌曲搜索。
+                        <li>- <strong>项目介绍</strong>:
+                            <ol>
+                                <li>1、原生JS+jQuery仿移动端网易云音乐</li>
+                                <li>2、支持在线听歌</li>
+                                <li>3、支持歌词动画展示</li>
+                                <li>4、支持专辑封面动画</li>
+                                <li>5、支持播放暂停</li>
+                                <li>6、支持歌曲搜索</li>
+                            </ol>
                         </li>
                         <li>
                             - 技术栈: HTML5、CSS3、JavaScript、JQuery
@@ -376,15 +435,19 @@
                 </div>
 
                 <div class="item">
-                    <h3><b>蜜蜂翻译小程序</b></h3>
+                    <h3>蜜蜂翻译小程序</h3>
                     <img src="./img/trans1.jpg" alt="蜜蜂翻译" class="translate">
                     <img src="./img/trans2.jpg" alt="蜜蜂翻译" class="translate">
                     <img src="./img/trans3.jpg" alt="蜜蜂翻译" class="translate">
                     <ul>
                         <li>
-                            - 项目介绍: 一款多功能翻译小程序
-                            - 该项目以百度翻译API为服务器域名提供支持。
-                            - <b>支持8种语言切换</b>,页面结构包括<b>翻译首页，语言列表页，翻译历史页</b>
+                            <strong>项目介绍</strong>: 
+                            <ol>
+                                <li>1、一款多功能<b>微信翻译小程序</b></li>
+                                <li>2、该项目以百度翻译API为服务器域名提供支持。</li>
+                                <li>3、支持8种语言切换</li>
+                                <li>4、页面结构包括翻译首页，语言列表页，翻译历史页</li>
+                            </ol>
                         </li>
                         <li>
                             - 项目源码: <a href="https://github.com/breezewy/BeeTranslation">点击查看</a>
@@ -392,15 +455,19 @@
                     </ul>
                 </div>
 
-                <div class="item">
-                    <h3><b>笨鸟电台</b></h3>
-                    
+                <div class="item" class="birdRadioBox">
+                    <h3>笨鸟电台</h3>
                     <ul class="birdRadio">
                         <li>
-                            - 项目介绍: 原生JS做的一款响应式大屏音乐播放WebAPP
-                        </li>
-                        <li>
-                            - 功能介绍: 1.支持切换音乐风格; 2.支持暂停/播放; 3.支持切换下一首; 4.支持拖动歌曲进度条，快进快退; 5.支持歌词动画展示;
+                            - <strong>项目介绍</strong>: 
+                            <ol>
+                                <li>1、原生JS做的一款<b>响应式</b>大屏音乐播放器</li>
+                                <li>2、支持切换音乐风格</li>
+                                <li>3、支持暂停/播放;</li>
+                                <li>4、支持切换下一首</li>
+                                <li>5、支持拖动歌曲进度条，快进快退</li>
+                                <li>6、支持歌词动画展示;</li>
+                            </ol>
                         </li>
                         <li>
                             - 技术栈: <b>HTML5</b>、<b>CSS3</b>、JavaScript、<b>JQuery</b>、<b>响应式</b>
